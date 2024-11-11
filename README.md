@@ -1,2 +1,2 @@
 # finance.ia
-Sistema SaaS para controle financeiro com relatórios inteligentes gerados a partir de uma Inteligência Artificial
+Plataforma de gestão financeiro utilizando IA para monitorar as movimentações financeiras oferecendo insights personalizados e facilitando o controle do orçamento
