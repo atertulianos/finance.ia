@@ -1,3 +1,4 @@
+import Logo from "@/_components/logo-tipo";
 import { Button } from "@/_components/ui/button";
 import { SignInButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
@@ -13,13 +14,17 @@ export default async function LoginPage() {
   return (
     <div className="grid h-full grid-cols-2">
       <div className="m-auto flex h-full max-w-[650px] flex-col justify-center p-8">
-        <Image
+        {/* <Image
           src="/logo.svg"
           width={173}
           height={39}
           alt="Finance IA"
           className="mb-8"
-        />
+        /> */}
+        <Logo className="mb-8">
+          <Logo.Icon size={34} className="mr-2 text-primary" />
+          <Logo.Label label="finanece IA" className="text-3xl font-semibold" />
+        </Logo>
         <h1 className="mb-3 text-4xl font-bold">Seja bem-vindo(a)!</h1>
         <p className="mb-8 text-muted-foreground">
           A Finance IA é uma plataforma de gestão financeira que utiliza

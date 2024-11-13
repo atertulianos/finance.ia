@@ -9,6 +9,8 @@ import { ColumnDef } from "@tanstack/react-table";
 import TransactionTypeBadge from "../_components/type-badge";
 import EditTransactionButton from "../_components/edit-transaction-button";
 import DeleteTransactionButton from "../_components/delete-transaction-button";
+import { Button } from "@/_components/ui/button";
+import { ArrowUpDown } from "lucide-react";
 
 export const transactionColumns: ColumnDef<Transaction>[] = [
   {
@@ -36,7 +38,17 @@ export const transactionColumns: ColumnDef<Transaction>[] = [
   },
   {
     accessorKey: "date",
-    header: "Data",
+    header: ({ column }) => {
+      return (
+        <Button
+          variant="ghost"
+          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        >
+          Data
+          <ArrowUpDown />
+        </Button>
+      );
+    },
     cell: ({ row: { original: transaction } }) =>
       new Date(transaction.date).toLocaleDateString("pt-BR", {
         day: "2-digit",

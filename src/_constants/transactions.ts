@@ -36,6 +36,15 @@ export const TRANSACTION_PAYMENT_METHOD_LABELS = {
   PIX: "Pix",
 };
 
+export const TRANSACTION_COLUMNS_LABEL = {
+  name: "Nome",
+  type: "Tipo",
+  category: "Categoria",
+  date: "Data",
+  amount: "Valor",
+  actions: "Ações",
+};
+
 export const TRANSACTION_TYPE_OPTIONS = [
   {
     value: TransactionType.EXPENSE,
