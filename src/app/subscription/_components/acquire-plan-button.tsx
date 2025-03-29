@@ -27,6 +27,7 @@ const AcquirePlanButton = () => {
       <Button className="w-full rounded-full font-bold" variant="link">
         <Link
           href={`${process.env.NEXT_PUBLIC_STRIPE_CUSTOMER_PORTAL_URL as string}?prefilled_email=${user.emailAddresses[0].emailAddress}`}
+          target="_blank"
         >
           Gerenciar plano
         </Link>
