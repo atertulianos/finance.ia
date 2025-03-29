@@ -1,4 +1,4 @@
-import { cn } from "@/_lib/utils";
+import { cn } from "@/src/_lib/utils";
 import { FingerprintIcon } from "lucide-react";
 import React from "react";
 

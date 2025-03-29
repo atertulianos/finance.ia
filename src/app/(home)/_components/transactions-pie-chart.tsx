@@ -2,16 +2,16 @@
 
 import { Pie, PieChart } from "recharts";
 
-import { Card, CardContent } from "@/_components/ui/card";
-import { TransactionPercentagePerType } from "@/_data/get-dashboard/types";
-import { TransactionType } from "@prisma/client";
-import { PiggyBankIcon, TrendingDownIcon, TrendingUpIcon } from "lucide-react";
+import { Card, CardContent } from "@/src/_components/ui/card";
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/_components/ui/chart";
+} from "@/src/_components/ui/chart";
+import { TransactionPercentagePerType } from "@/src/_data/get-dashboard/types";
+import { TransactionType } from "@prisma/client";
+import { PiggyBankIcon, TrendingDownIcon, TrendingUpIcon } from "lucide-react";
 import PercentageItem from "./percentage-item";
 
 const chartConfig = {

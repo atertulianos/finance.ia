@@ -1,10 +1,10 @@
 "use client";
 
-import { Button } from "@/_components/ui/button";
+import { Button } from "@/src/_components/ui/button";
 import {
   TRANSACTION_CATEGORY_LABELS,
   TRANSACTION_PAYMENT_METHOD_LABELS,
-} from "@/_constants/transactions";
+} from "@/src/_constants/transactions";
 import { Transaction } from "@prisma/client";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown } from "lucide-react";

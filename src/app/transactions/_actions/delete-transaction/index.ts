@@ -1,8 +1,8 @@
 "use server";
 
-import { db } from "@/_lib/prisma";
-import { DeleteTransactionSchema } from "./schema";
+import { db } from "@/src/_lib/prisma";
 import { revalidatePath } from "next/cache";
+import { DeleteTransactionSchema } from "./schema";
 
 export const deleteTransaction = async ({
   transactionId,

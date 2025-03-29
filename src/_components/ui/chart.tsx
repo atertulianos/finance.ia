@@ -3,12 +3,13 @@
 import * as React from "react";
 import * as RechartsPrimitive from "recharts";
 
-import { cn } from "@/_lib/utils";
+import { cn } from "@/src/_lib/utils";
 
 // Format: { THEME_NAME: CSS_SELECTOR }
 const THEMES = { light: "", dark: ".dark" } as const;
 
 export type ChartConfig = {
+  // eslint-disable-next-line no-unused-vars
   [k in string]: {
     label?: React.ReactNode;
     icon?: React.ComponentType;

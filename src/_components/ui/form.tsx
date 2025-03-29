@@ -1,8 +1,8 @@
 "use client";
 
-import * as React from "react";
 import * as LabelPrimitive from "@radix-ui/react-label";
 import { Slot } from "@radix-ui/react-slot";
+import * as React from "react";
 import {
   Controller,
   ControllerProps,
@@ -12,8 +12,8 @@ import {
   useFormContext,
 } from "react-hook-form";
 
-import { cn } from "@/_lib/utils";
-import { Label } from "@/_components/ui/label";
+import { Label } from "@/src/_components/ui/label";
+import { cn } from "@/src/_lib/utils";
 
 const Form = FormProvider;
 
@@ -168,12 +168,12 @@ const FormMessage = React.forwardRef<
 FormMessage.displayName = "FormMessage";
 
 export {
-  useFormField,
   Form,
-  FormItem,
-  FormLabel,
   FormControl,
   FormDescription,
-  FormMessage,
   FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+  useFormField,
 };

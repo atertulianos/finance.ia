@@ -4,7 +4,7 @@ import * as React from "react";
 import { ptBR } from "date-fns/locale";
 import { Calendar as CalendarIcon } from "lucide-react";
 
-import { cn } from "@/_lib/utils";
+import { cn } from "@/src/_lib/utils";
 import { Button } from "./button";
 import { Calendar } from "./calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "./popover";

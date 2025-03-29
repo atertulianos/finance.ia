@@ -1,5 +1,5 @@
-import { Button } from "@/_components/ui/button";
-import UpsertTransactionDialog from "@/_components/upsert-transaction-dialog";
+import { Button } from "@/src/_components/ui/button";
+import UpsertTransactionDialog from "@/src/_components/upsert-transaction-dialog";
 import { Transaction } from "@prisma/client";
 import { EditIcon } from "lucide-react";
 import { useState } from "react";

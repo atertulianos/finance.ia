@@ -1,10 +1,10 @@
 "use client";
 
-import * as React from "react";
 import * as AlertDialogPrimitive from "@radix-ui/react-alert-dialog";
+import * as React from "react";
 
-import { cn } from "@/_lib/utils";
-import { buttonVariants } from "@/_components/ui/button";
+import { buttonVariants } from "@/src/_components/ui/button";
+import { cn } from "@/src/_lib/utils";
 
 const AlertDialog = AlertDialogPrimitive.Root;
 
@@ -128,14 +128,14 @@ AlertDialogCancel.displayName = AlertDialogPrimitive.Cancel.displayName;
 
 export {
   AlertDialog,
-  AlertDialogPortal,
-  AlertDialogOverlay,
-  AlertDialogTrigger,
-  AlertDialogContent,
-  AlertDialogHeader,
-  AlertDialogFooter,
-  AlertDialogTitle,
-  AlertDialogDescription,
   AlertDialogAction,
   AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogOverlay,
+  AlertDialogPortal,
+  AlertDialogTitle,
+  AlertDialogTrigger,
 };

@@ -8,11 +8,11 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@/_components/ui/alert-dialog";
-import { Button } from "@/_components/ui/button";
+} from "@/src/_components/ui/alert-dialog";
+import { Button } from "@/src/_components/ui/button";
 import { TrashIcon } from "lucide-react";
-import { deleteTransaction } from "../_actions/delete-transaction";
 import { toast } from "sonner";
+import { deleteTransaction } from "../_actions/delete-transaction";
 
 interface DeleteTransactionButtonProps {
   transactionId: string;

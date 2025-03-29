@@ -6,8 +6,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/_components/ui/select";
-import { MONTH_OPTIONS } from "@/_constants/dashborad";
+} from "@/src/_components/ui/select";
+import { MONTH_OPTIONS } from "@/src/_constants/dashborad";
 import { useRouter, useSearchParams } from "next/navigation";
 
 export default function TimeSelect() {

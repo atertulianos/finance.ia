@@ -1,8 +1,8 @@
-import { Button } from "@/_components/ui/button";
-import { CardContent, CardHeader, CardTitle } from "@/_components/ui/card";
-import { ScrollArea } from "@/_components/ui/scroll-area";
-import { TRANSACTION_PAYMENT_METHOD_ICONS } from "@/_constants/transactions";
-import { formatCurrency } from "@/_utils/currency";
+import { Button } from "@/src/_components/ui/button";
+import { CardContent, CardHeader, CardTitle } from "@/src/_components/ui/card";
+import { ScrollArea } from "@/src/_components/ui/scroll-area";
+import { TRANSACTION_PAYMENT_METHOD_ICONS } from "@/src/_constants/transactions";
+import { formatCurrency } from "@/src/_utils/currency";
 import { Transaction, TransactionType } from "@prisma/client";
 import Image from "next/image";
 import Link from "next/link";

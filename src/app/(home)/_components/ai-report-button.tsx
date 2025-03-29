@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/_components/ui/button";
+import { Button } from "@/src/_components/ui/button";
 import {
   Dialog,
   DialogClose,
@@ -10,13 +10,13 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/_components/ui/dialog";
+} from "@/src/_components/ui/dialog";
+import { ScrollArea } from "@/src/_components/ui/scroll-area";
 import { BotIcon, Loader2Icon } from "lucide-react";
-import { generateAiReport } from "../_actions/generate-ai-report";
-import { useState } from "react";
-import { ScrollArea } from "@/_components/ui/scroll-area";
-import Markdown from "react-markdown";
 import Link from "next/link";
+import { useState } from "react";
+import Markdown from "react-markdown";
+import { generateAiReport } from "../_actions/generate-ai-report";
 
 interface AiReportButtonProps {
   hasPremiumPlan: boolean;

@@ -1,19 +1,12 @@
 "use client";
 
-import React from "react";
 import {
-  ColumnDef,
-  flexRender,
-  getCoreRowModel,
-  useReactTable,
-  SortingState,
-  ColumnFiltersState,
-  VisibilityState,
-  getPaginationRowModel,
-  getSortedRowModel,
-  getFilteredRowModel,
-} from "@tanstack/react-table";
-import { ChevronDown } from "lucide-react";
+  DropdownMenu,
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuTrigger,
+} from "@/src/_components/ui/dropdown-menu";
+import { Input } from "@/src/_components/ui/input";
 import {
   Table,
   TableBody,
@@ -21,16 +14,23 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/_components/ui/table";
-import { Button } from "./button";
-import { Input } from "@/_components/ui/input";
+} from "@/src/_components/ui/table";
+import { TRANSACTION_COLUMNS_LABEL } from "@/src/_constants/transactions";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuCheckboxItem,
-  DropdownMenuTrigger,
-} from "@/_components/ui/dropdown-menu";
-import { TRANSACTION_COLUMNS_LABEL } from "@/_constants/transactions";
+  ColumnDef,
+  ColumnFiltersState,
+  SortingState,
+  VisibilityState,
+  flexRender,
+  getCoreRowModel,
+  getFilteredRowModel,
+  getPaginationRowModel,
+  getSortedRowModel,
+  useReactTable,
+} from "@tanstack/react-table";
+import { ChevronDown } from "lucide-react";
+import React from "react";
+import { Button } from "./button";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];

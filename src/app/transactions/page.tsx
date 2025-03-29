@@ -1,11 +1,11 @@
-import { DataTable } from "@/_components/ui/data-table";
-import { transactionColumns } from "./_columns";
-import { db } from "@/_lib/prisma";
+import AddTransactionButton from "@/src/_components/add-transaction-button";
+import { DataTable } from "@/src/_components/ui/data-table";
+import { ScrollArea } from "@/src/_components/ui/scroll-area";
+import { canUserAddTransaction } from "@/src/_data/can-user-add-transaction";
+import { db } from "@/src/_lib/prisma";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
-import { canUserAddTransaction } from "@/_data/can-user-add-transaction";
-import { ScrollArea } from "@/_components/ui/scroll-area";
-import AddTransactionButton from "@/_components/add-transaction-button";
+import { transactionColumns } from "./_columns";
 // import TransactionService from "@/services/controllers/Transactions.controller";
 // import { auth } from "@clerk/nextjs/server";
 

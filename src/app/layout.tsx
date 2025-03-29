@@ -1,11 +1,11 @@
+import Navbar from "@/src/_components/navbar";
+import { ClerkProvider } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs/server";
+import { dark } from "@clerk/themes";
 import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
-import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
-import { dark } from "@clerk/themes";
-import Navbar from "@/_components/navbar";
 import { Toaster } from "sonner";
-import { auth } from "@clerk/nextjs/server";
+import "./globals.css";
 
 const mulish = Mulish({
   subsets: ["latin-ext"],

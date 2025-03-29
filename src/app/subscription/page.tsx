@@ -1,10 +1,10 @@
-import { Card, CardContent, CardHeader } from "@/_components/ui/card";
-import { CheckIcon, XIcon } from "lucide-react";
-import AcquirePlanButton from "./_components/acquire-plan-button";
-import { getCurrentMonthTransactions } from "@/_data/get-current-month-transactions";
+import { Badge } from "@/src/_components/ui/badge";
+import { Card, CardContent, CardHeader } from "@/src/_components/ui/card";
+import { getCurrentMonthTransactions } from "@/src/_data/get-current-month-transactions";
 import { auth, clerkClient } from "@clerk/nextjs/server";
+import { CheckIcon, XIcon } from "lucide-react";
 import { redirect } from "next/navigation";
-import { Badge } from "@/_components/ui/badge";
+import AcquirePlanButton from "./_components/acquire-plan-button";
 
 export default async function SubscriptionPage() {
   const { userId } = await auth();

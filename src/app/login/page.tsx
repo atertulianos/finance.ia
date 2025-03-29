@@ -1,5 +1,5 @@
-import Logo from "@/_components/logo-tipo";
-import { Button } from "@/_components/ui/button";
+import Logo from "@/src/_components/logo-tipo";
+import { Button } from "@/src/_components/ui/button";
 import { SignInButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
 import { LogInIcon } from "lucide-react";

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { cn } from "@/_lib/utils";
+import { cn } from "@/src/_lib/utils";
 
 export type InputProps = React.InputHTMLAttributes<HTMLInputElement>;
 

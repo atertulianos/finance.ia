@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import SummaryCard from "./summary-card";
 
-interface SummaryCards {
+interface SummaryCardsProps {
   month: string;
   balance: number;
   depositsTotal: number;
@@ -21,7 +21,7 @@ export default function SummaryCards({
   expensesTotal,
   investmentsTotal,
   userCanAddTransaction,
-}: SummaryCards) {
+}: SummaryCardsProps) {
   return (
     <div className="space-y-6">
       {/* PRIMEIRO CARD */}

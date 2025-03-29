@@ -1,4 +1,4 @@
-import { db } from "@/_lib/prisma";
+import { db } from "@/src/_lib/prisma";
 import { auth } from "@clerk/nextjs/server";
 import { endOfMonth, startOfMonth } from "date-fns";
 

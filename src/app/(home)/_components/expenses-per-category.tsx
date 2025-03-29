@@ -1,8 +1,8 @@
-import { CardContent, CardHeader, CardTitle } from "@/_components/ui/card";
-import { Progress } from "@/_components/ui/progress";
-import { ScrollArea } from "@/_components/ui/scroll-area";
-import { TRANSACTION_CATEGORY_LABELS } from "@/_constants/transactions";
-import { TotalExpensePerCategory } from "@/_data/get-dashboard/types";
+import { CardContent, CardHeader, CardTitle } from "@/src/_components/ui/card";
+import { Progress } from "@/src/_components/ui/progress";
+import { ScrollArea } from "@/src/_components/ui/scroll-area";
+import { TRANSACTION_CATEGORY_LABELS } from "@/src/_constants/transactions";
+import { TotalExpensePerCategory } from "@/src/_data/get-dashboard/types";
 
 interface ExpensesPerCategoryProps {
   expensesPerCategory: TotalExpensePerCategory[];
