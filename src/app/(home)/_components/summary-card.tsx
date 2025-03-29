@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
 import AddTransactionButton from "@/_components/add-transaction-button";
 import { Card, CardContent, CardHeader } from "@/_components/ui/card";
+import { ReactNode } from "react";
 
 interface SummaryCardProps {
   icon: ReactNode;
@@ -10,26 +10,26 @@ interface SummaryCardProps {
   userCanAddTransaction?: boolean;
 }
 
-export default function SumarryCard({
+const SummaryCard = ({
   icon,
   title,
   amount,
-  size = "small",
+  size,
   userCanAddTransaction,
-}: SummaryCardProps) {
+}: SummaryCardProps) => {
   return (
-    <Card>
+    <Card className={`${size === "large" ? "bg-slate-900/75" : ""}`}>
       <CardHeader className="flex-row items-center gap-4">
         {icon}
         <p
-          className={`${size === "small" ? "text-muted-foreground" : "text-white opacity-70"}`}
+          className={`${size === "large" ? "text-white opacity-70" : "text-muted-foreground"}`}
         >
           {title}
         </p>
       </CardHeader>
-      <CardContent className="flex justify-between">
+      <CardContent className="flex flex-col justify-between sm:flex-row sm:items-center sm:gap-2">
         <p
-          className={`font-bold ${size === "small" ? "text-2xl" : "text-4xl"}`}
+          className={`font-bold ${size === "large" ? "text-4xl" : "text-2xl md:m-0 md:text-xl"}`}
         >
           {Intl.NumberFormat("pt-BR", {
             style: "currency",
@@ -43,4 +43,6 @@ export default function SumarryCard({
       </CardContent>
     </Card>
   );
-}
+};
+
+export default SummaryCard;

@@ -23,7 +23,7 @@ export default function SummaryCards({
   userCanAddTransaction,
 }: SummaryCards) {
   return (
-    <div className="spaec-y-1">
+    <div className="space-y-6">
       {/* PRIMEIRO CARD */}
 
       <SummaryCard
@@ -35,7 +35,7 @@ export default function SummaryCards({
       />
 
       {/* OUTROS CARDS */}
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         <SummaryCard
           icon={<PiggyBankIcon size={16} />}
           title="Investido"
